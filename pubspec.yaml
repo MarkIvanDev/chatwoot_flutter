@@ -1,6 +1,6 @@
 name: chatwoot_flutter
 description: An unofficial flutter client sdk for chatwoot. Integrate Chatwoot into your flutter app.
-version: 1.0.0+dev.1
+version: 2.0.0-dev.1
 repository: https://github.com/MarkIvanDev/chatwoot_flutter.git
 issue_tracker: https://github.com/MarkIvanDev/chatwoot_flutter/issues
 
