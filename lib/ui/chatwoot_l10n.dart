@@ -2,6 +2,9 @@ import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 
 /// Base chat l10n containing all required variables to provide localized chatwoot chat
 class ChatwootL10n extends ChatL10n {
+  /// Accessibility label (hint) for the and word
+  final String andLabel;
+
   /// Accessibility label (hint) for the attachment button
   final String attachmentButtonAccessibilityLabel;
 
@@ -23,6 +26,9 @@ class ChatwootL10n extends ChatL10n {
   /// Placeholder for the text field
   final String typingText;
 
+  /// Accessibility label (hint) for the others word
+  final String othersLabel;
+
   /// Accessibility label (hint) for the send button
   final String sendButtonAccessibilityLabel;
 
@@ -30,24 +36,30 @@ class ChatwootL10n extends ChatL10n {
   final String conversationResolvedMessage;
 
   /// Creates a new chatwoot l10n
-  const ChatwootL10n(
-      {this.attachmentButtonAccessibilityLabel = "",
-      this.emptyChatPlaceholder = "",
-      this.fileButtonAccessibilityLabel = "",
-      this.onlineText = "Typically replies in a few hours",
-      this.offlineText = "We're away at the moment",
-      this.typingText = "typing...",
-      this.inputPlaceholder = "Type your message",
-      this.sendButtonAccessibilityLabel = "Send Message",
-      this.conversationResolvedMessage =
-          "Your ticket has been marked as resolved",
-      String unreadMessagesLabel = "Unread Messages"})
-      : super(
-            attachmentButtonAccessibilityLabel:
-                attachmentButtonAccessibilityLabel,
-            emptyChatPlaceholder: emptyChatPlaceholder,
-            fileButtonAccessibilityLabel: fileButtonAccessibilityLabel,
-            inputPlaceholder: inputPlaceholder,
-            sendButtonAccessibilityLabel: sendButtonAccessibilityLabel,
-            unreadMessagesLabel: unreadMessagesLabel);
+  const ChatwootL10n({
+    this.andLabel = "and",
+    this.attachmentButtonAccessibilityLabel = "",
+    this.emptyChatPlaceholder = "",
+    this.fileButtonAccessibilityLabel = "",
+    this.onlineText = "Typically replies in a few hours",
+    this.offlineText = "We're away at the moment",
+    this.typingText = "typing...",
+    this.othersLabel = "others",
+    this.inputPlaceholder = "Type your message",
+    this.sendButtonAccessibilityLabel = "Send Message",
+    this.conversationResolvedMessage =
+        "Your ticket has been marked as resolved",
+    String unreadMessagesLabel = "Unread Messages",
+  }) : super(
+          and: andLabel,
+          attachmentButtonAccessibilityLabel:
+              attachmentButtonAccessibilityLabel,
+          emptyChatPlaceholder: emptyChatPlaceholder,
+          fileButtonAccessibilityLabel: fileButtonAccessibilityLabel,
+          inputPlaceholder: inputPlaceholder,
+          isTyping: typingText,
+          others: othersLabel,
+          sendButtonAccessibilityLabel: sendButtonAccessibilityLabel,
+          unreadMessagesLabel: unreadMessagesLabel,
+        );
 }
