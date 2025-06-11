@@ -5,7 +5,7 @@ repository: https://github.com/MarkIvanDev/chatwoot_flutter.git
 issue_tracker: https://github.com/MarkIvanDev/chatwoot_flutter/issues
 
 environment:
-  sdk: '>=3.7.0 <4.0.0'
+  sdk: ">=3.7.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -20,7 +20,7 @@ dependencies:
   equatable: ^2.0.5
   riverpod: ^2.5.1
   synchronized: ^3.1.0+1
-  intl: ^0.19.0
+  intl: ^0.20.2
   flutter_chat_types: ^3.6.2
   # stream_channel: ^2.1.2
   # async: ^2.11.0
